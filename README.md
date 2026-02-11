@@ -27,7 +27,7 @@ The glove architecture consists of three main stages:
    - STM32 reads analog values from flex sensors and digital output from the IMU.  
 
 2. **Data Transmission**  
-   - Sensor data is packaged on the STM32 and transmitted to a host computer. Initially USB is planned; future iterations may include wireless BLE connectivity.  
+   - Sensor data is collected and formatted on the STM32 to be transmitted to a host computer using UART. Initially UART is planned; future iterations will most likely include wireless BLE connectivity.  
 
 3. **Data Visualization / Application**  
    - The host computer parses incoming data to render a 3D hand model in real time.  
