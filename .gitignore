@@ -1,0 +1,21 @@
+# Build outputs
+/Debug/
+/Release/
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.d
+*.su
+*.bak
+*.log
+
+# IDE files (keep .project and .cproject though)
+.metadata/
+/.settings/
+
+# Backup files
+*~
+*.swp 
