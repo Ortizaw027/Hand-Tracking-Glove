@@ -38,6 +38,11 @@
         * Output
         * EVENT_OUT
         * EXTI
+     PA2   ------> ADCx_IN2
+     PA3   ------> ADCx_IN3
+     PA4   ------> ADCx_IN4
+     PA5   ------> ADCx_IN5
+     PA6   ------> ADCx_IN6
 */
 void MX_GPIO_Init(void)
 {
@@ -64,6 +69,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(BNO_RST_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA2 PA3 PA4 PA5
+                           PA6 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5
+                          |GPIO_PIN_6;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
