@@ -32,7 +32,13 @@ The glove architecture consists of three main stages:
 3. **Data Visualization / Application**  
    - The host computer parses incoming data to render a 3D hand model in real time.  
    - Data can be used for gesture recognition, VR/AR applications, or as an input for robotic systems.  
+## Hardware Assembly & Prototype
 
+Here is what the physical prototype looks like during bench testing, wired up with the STM32 and custom flex sensors:
+
+<p align="center">
+<img width="3024" height="4032" alt="IMG_3400" src="https://github.com/user-attachments/assets/573d2e47-4e16-4f48-88d4-3b649a4a5479" />
+</p>
 ## Future Improvements
 - **Wireless PCB version** with integrated LiPo battery  
 - Optimized PCB layout for a compact, glove-mounted design  
