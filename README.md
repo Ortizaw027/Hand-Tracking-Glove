@@ -39,6 +39,7 @@ The physical build centers around custom-fabricated flex sensors routed through 
 <p align="center">
 <img width="3024" height="4032" alt="IMG_3400" src="https://github.com/user-attachments/assets/573d2e47-4e16-4f48-88d4-3b649a4a5479" />
 </p>
+
 ## Future Improvements
 - **Wireless PCB version** with integrated LiPo battery  
 - Optimized PCB layout for a compact, glove-mounted design  
